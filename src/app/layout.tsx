@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { inter } from "./fonts";
+import type { Metadata } from 'next';
+import './globals.css';
+import { inter } from './fonts';
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | My Application",
-    default: "Home | My Application",
+    template: '%s | My Application',
+    default: 'Home | My Application',
   },
 };
 
