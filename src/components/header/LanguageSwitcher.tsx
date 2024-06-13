@@ -24,15 +24,11 @@ export default function LanguageSwitcher() {
 
     document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
 
-    // router.push(
-    //   currentLocale === i18nConfig.defaultLocale && !i18nConfig.prefixDefault
-    //     ? `/${newLocale}/${currentPathname}`
-    //     : currentPathname.replace(`/${currentLocale}`, `/${newLocale}`),
-    // );
-    if (currentLocale === i18nConfig.defaultLocale)
-      router.push(`/${newLocale}${currentPathname}`);
-    else router.push(currentPathname.replace(currentLocale, newLocale));
-
+    router.push(
+      currentLocale === i18nConfig.defaultLocale
+        ? `/${newLocale}${currentPathname}`
+        : currentPathname.replace(currentLocale, newLocale),
+    );
     router.refresh();
   };
 
