@@ -31,3 +31,16 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Common */
+.link {
+  @apply text-sm underline text-blue-700 hover:text-blue-400;
+}
+
+button {
+  @apply outline outline-1 outline-gray-300 rounded-md p-1 font-bold text-sm hover:outline-2 hover:outline-gray-500 hover:bg-gray-100;
+}
+
+.header {
+  @apply fixed top-0 left-0 h-16 px-5 bg-white shadow-sm w-full flex items-center justify-end space-x-2;
+}
