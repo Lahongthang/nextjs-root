@@ -17,12 +17,14 @@ const i18nNs = ['sign-in'];
 export default async function SignInPage({ params: { locale } }: Props) {
   const { t, resources } = await initTranslations(locale, i18nNs);
   return (
-    <TranslationsProvider
-      locale={locale}
-      namespaces={i18nNs}
-      resources={resources}
-    >
-      <SignInContainer />
-    </TranslationsProvider>
+    <div className="w-full flex flex-col items-center">
+      <TranslationsProvider
+        locale={locale}
+        namespaces={i18nNs}
+        resources={resources}
+      >
+        <SignInContainer />
+      </TranslationsProvider>
+    </div>
   );
 }
