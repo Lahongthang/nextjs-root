@@ -1,0 +1,57 @@
+.storybook-button {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 700;
+  border: 0;
+  height: 36px;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 0;
+  align-items: center;
+  line-height: 1.7;
+  box-sizing: border-box;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.storybook-button--primary {
+  color: white;
+  background-color: #078dee;
+}
+.storybook-button--primary:hover {
+  color: white;
+  background-color: #0351ab;
+}
+
+.storybook-button--secondary {
+  color: #212b36;
+  background-color: transparent;
+  border: 1px solid rgb(33, 43, 54);
+}
+.storybook-button--secondary:hover {
+  color: #333;
+  background-color: rgba(33, 43, 54, 0.08);
+  box-shadow: currentcolor 0px 0px 0px 0.5px;
+}
+
+.storybook-button--small {
+  height: 30px;
+  font-size: 0.8125rem;
+  padding: 4px 8px;
+}
+.storybook-button--medium {
+  font-size: 0.875rem;
+  padding: 6px 12px;
+}
+.storybook-button--large {
+  height: 48px;
+  font-size: 0.875rem;
+  padding: 6px 16px;
+}
